@@ -1,0 +1,12 @@
+// Converted from Digital Logic Sim (Sebastian Lague)
+// Original chip: AND
+
+CHIP AND {
+    IN in, in1;
+    OUT out;
+
+    PARTS:
+    Nand(a=in0, b=in1, out=w1);
+    Nand(b=in0, out=w2);
+    Nand(a=w1, b=w2, out=out);
+}
